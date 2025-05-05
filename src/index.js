@@ -1,44 +1,28 @@
 import readlineSync from 'readline-sync';
-import { getName } from '../src/cli.js';
+import { getName } from './cli.js';
 
-const name = getName();
-console.log('What is the result of the expression?');
+const roundsCount = 3;
 
-export const getCalc = () => { 
-  let correctAnswersCount = 0;
+const runGame = (description, getRoundData) => {
+  console.log('Welcome to the Brain Games!');
+  const name = getName();
+  console.log(description);
 
-  while (correctAnswersCount < 3) {
-    const firstNum = Math.floor(Math.random() * 100) + 1;
-    const secondNum = Math.floor(Math.random() * 100) + 1;
+  for (let i = 0; i < roundsCount; i++) {
+    const [question, correctAnswer] = getRoundData();
+    console.log(`Question: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: ');
 
-    const operators = ['+', '-', '*'];
-    const randomOperator = operators[Math.floor(Math.random() * operators.length)];
-
-    console.log(`Question: ${firstNum} ${randomOperator} ${secondNum}`);
-    const input = readlineSync.question('Your answer: ');
-
-    let correctAnswer;
-    switch (randomOperator) {
-      case '+':
-        correctAnswer = firstNum + secondNum;
-        break;
-      case '-':
-        correctAnswer = firstNum - secondNum;
-        break;
-      case '*':
-        correctAnswer = firstNum * secondNum;
-        break;
-    }
-
-    if (Number(input) === correctAnswer) {
-      console.log('Correct!');
-      correctAnswersCount += 1;
-    } else {
-      console.log(`'${input}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+    if (userAnswer !== String(correctAnswer)) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
     }
+
+    console.log('Correct!');
   }
 
   console.log(`Congratulations, ${name}!`);
 };
+
+export default runGame;
