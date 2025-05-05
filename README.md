@@ -6,3 +6,5 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jsprw88_fullstack-javascript-project-44&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jsprw88_fullstack-javascript-project-44)
 
 [![asciicast](https://asciinema.org/a/Aq2tpMUV3wXpxHMCuJWAupnmW.svg)](https://asciinema.org/a/Aq2tpMUV3wXpxHMCuJWAupnmW)
+
+[![asciicast](https://asciinema.org/a/M2s1g0Q3VEGAvaW9aALvNlbYK.svg)](https://asciinema.org/a/M2s1g0Q3VEGAvaW9aALvNlbYK)
