@@ -1,5 +1,6 @@
 import runGame from "../index.js";
-import { getRandomNumber } from "../utils.js";
+import getRandomNumber from "../utils.js";
+import calculate from "../calculate.js";
 
 const description = "What is the result of the expression?";
 
@@ -9,18 +10,8 @@ const getRoundData = () => {
   const operators = ["+", "-", "*"];
   const operator = operators[Math.floor(Math.random() * operators.length)];
 
-  let result;
-  switch (operator) {
-    case "+":
-      result = num1 + num2;
-      break;
-    case "-":
-      result = num1 - num2;
-      break;
-    case "*":
-      result = num1 * num2;
-      break;
-  }
+  let result = calculate(num1, operator, num2);
+ 
 
   const question = `${num1} ${operator} ${num2}`;
   return [question, result];
