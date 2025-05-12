@@ -19,13 +19,13 @@ const runGame = (description, getRoundData) => {
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`,
       );
       console.log(`Let's try again, ${name}!`);
-      return;
+      return
     }
 
     console.log("Correct!");
   }
 
   console.log(`Congratulations, ${name}!`);
-};
+}
 
 export default runGame;

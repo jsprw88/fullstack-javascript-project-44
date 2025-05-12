@@ -8,6 +8,6 @@ const getRoundData = () => {
   const number = getRandomNumber();
   const correctAnswer = isEven(number) ? "yes" : "no";
   return [number, correctAnswer];
-};
+}
 
 export default () => runGame(description, getRoundData);

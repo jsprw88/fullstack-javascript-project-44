@@ -13,6 +13,6 @@ const getRoundData = () => {
 
   const question = `${num1} ${operator} ${num2}`;
   return [question, result];
-};
+}
 
 export default () => runGame(description, getRoundData);

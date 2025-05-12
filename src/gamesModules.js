@@ -9,7 +9,9 @@ export const calculate = (num1, operator, num2) => {
     case "*":
       return num1 * num2;
     case "/":
-      return num1 / num2;
+      return num2 !== 0 ? num1 / num2 : NaN;
+    default:
+      throw new Error(`Unsupported operator: ${operator}`);
   }
 };
 
@@ -24,7 +26,7 @@ export const generateProgression = (start, step, length) => {
   }
 
   return progression;
-};
+}
 
 export const getGcd = (a, b) => {
   while (b !== 0) {
@@ -33,12 +35,12 @@ export const getGcd = (a, b) => {
     a = temp;
   }
   return a;
-};
+}
 
 export const getName = () => {
   const userName = readlineSync.question("May I have your name? ");
   return userName;
-};
+}
 
 export const isEven = (number) => number % 2 === 0;
 
@@ -60,4 +62,4 @@ export const isPrime = (number) => {
   }
 
   return true;
-};
+}

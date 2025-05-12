@@ -11,6 +11,6 @@ const getRoundData = () => {
 
   const question = `${a} ${b}`;
   return [question, result];
-};
+}
 
 export default () => runGame(description, getRoundData);

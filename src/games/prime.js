@@ -10,6 +10,6 @@ const getRoundData = () => {
   const correctAnswer = isPrime(number) ? "yes" : "no";
 
   return [number, correctAnswer];
-};
+}
 
 export default () => runGame(description, getRoundData);

@@ -15,8 +15,8 @@ const getRoundData = () => {
 
   progression[randomIndex] = "..";
 
-  const question = progression.join(' ');
+  const question = progression.join(" ");
   return [question, hiddenValue];
-};
+}
 
 export default () => runGame(description, getRoundData);
