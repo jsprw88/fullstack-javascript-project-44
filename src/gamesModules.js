@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync'
+import { randomInt } from 'crypto'
 
 export const calculate = (num1, operator, num2) => {
   switch (operator) {
@@ -15,7 +16,7 @@ export const calculate = (num1, operator, num2) => {
   }
 }
 
-export const getRandomNumber = (min = 1, max = 100) => Math.floor(Math.random() * (max - min + 1)) + min
+export const getRandomNumber = (min = 1, max = 100) => randomInt(min, max + 1)
 
 export const generateProgression = (start, step, length) => {
   const progression = []
