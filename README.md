@@ -34,7 +34,6 @@
 
 Make sure that Node.js is installed (preferably the latest LTS version). Then:
 
-```bash
 git clone https://github.com/jsprw88/fullstack-javascript-project-44.git
 
 cd fullstack-javascript-project-44
