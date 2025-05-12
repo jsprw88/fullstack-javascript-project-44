@@ -41,7 +41,7 @@ export const getName = () => {
   return userName
 }
 
-export const isEven = (number) => number % 2 === 0
+export const isEven = number => number % 2 === 0
 
 export const isPrime = (number) => {
   if (number <= 1) {
