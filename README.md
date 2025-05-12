@@ -16,8 +16,6 @@
 
 [![asciicast](https://asciinema.org/a/NvhdtVwhkYKiel4q1O1ExMfu2.svg)](https://asciinema.org/a/NvhdtVwhkYKiel4q1O1ExMfu2)
 
-
-
 # Brain Games
 
 **Brain Games** is a console application that includes a series of mini-games. Each game challenges the user to solve a simple math problem. The goal is to answer 3 questions correctly in a row.
@@ -50,4 +48,3 @@ brain-calc
 brain-gcd
 brain-progression
 brain-prime
-
