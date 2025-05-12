@@ -15,7 +15,7 @@ const getRoundData = () => {
 
   progression[randomIndex] = "..";
 
-  const question = progression;
+  const question = progression.join(' ');
   return [question, hiddenValue];
 };
 
