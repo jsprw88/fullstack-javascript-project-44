@@ -1,6 +1,5 @@
 import runGame from "../index.js";
-import getRandomNumber from "../utils.js";
-import isEven from "../isEven.js";
+import { isEven, getRandomNumber } from "../gamesModules.js";
 
 const description =
   'Answer "yes" if the number is even, otherwise answer "no".';

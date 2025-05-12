@@ -1,6 +1,5 @@
 import runGame from "../index.js";
-import getRandomNumber from "../utils.js";
-import getGcd from "../getGcd.js";
+import { getGcd, getRandomNumber } from "../gamesModules.js";
 
 const description = "Find the greatest common divisor of given numbers.";
 

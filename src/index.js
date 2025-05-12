@@ -1,5 +1,5 @@
 import readlineSync from "readline-sync";
-import getName from "./getname.js";
+import { getName } from "./gamesModules.js";
 
 const roundsCount = 3;
 

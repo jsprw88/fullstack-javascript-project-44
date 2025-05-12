@@ -1,6 +1,5 @@
 import runGame from "../index.js";
-import getRandomNumber from "../utils.js";
-import generateProgression from "../generateProgression.js";
+import { generateProgression, getRandomNumber } from "../gamesModules.js";
 
 const description = "What number is missing in the progression?";
 
