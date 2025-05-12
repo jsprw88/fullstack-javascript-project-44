@@ -16,7 +16,7 @@
 
 [![asciicast](https://asciinema.org/a/NvhdtVwhkYKiel4q1O1ExMfu2.svg)](https://asciinema.org/a/NvhdtVwhkYKiel4q1O1ExMfu2)
 
-````
+
 
 # Brain Games
 
@@ -48,4 +48,4 @@ brain-calc
 brain-gcd
 brain-progression
 brain-prime
-````
+
