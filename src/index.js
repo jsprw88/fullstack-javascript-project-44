@@ -6,6 +6,7 @@ const roundsCount = 3;
 const runGame = (description, getRoundData) => {
   console.log("Welcome to the Brain Games!");
   const name = getName();
+  console.log(`Hello, ${name}!`);
   console.log(description);
 
   for (let i = 0; i < roundsCount; i++) {

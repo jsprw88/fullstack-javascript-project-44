@@ -7,7 +7,7 @@ const description =
 const getRoundData = () => {
   const number = getRandomNumber(1, 1000);
 
-  const correctAnswer = isPrime(number);
+  const correctAnswer = isPrime(number) ? 'yes' : 'no';
 
   return [number, correctAnswer];
 };

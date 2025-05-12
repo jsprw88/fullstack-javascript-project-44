@@ -37,7 +37,6 @@ export const getGcd = (a, b) => {
 
 export const getName = () => {
   const userName = readlineSync.question("May I have your name? ");
-  console.log(`Hello, ${userName}!`);
   return userName;
 };
 
@@ -45,18 +44,18 @@ export const isEven = (number) => number % 2 === 0;
 
 export const isPrime = (number) => {
   if (number <= 1) {
-    return "no";
+    return false;
   } else if (number === 2) {
-    return "yes";
+    return true;
   } else if (number % 2 === 0) {
-    return "no";
+    return false;
   }
 
   for (let i = 3; i <= Math.sqrt(number); i += 2) {
     if (number % i === 0) {
-      return "no";
+      return false;
     }
   }
 
-  return "yes";
+  return true;
 };
