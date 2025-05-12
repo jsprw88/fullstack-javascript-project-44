@@ -45,9 +45,11 @@ export const isEven = (number) => number % 2 === 0;
 export const isPrime = (number) => {
   if (number <= 1) {
     return false;
-  } else if (number === 2) {
+  }
+  if (number === 2) {
     return true;
-  } else if (number % 2 === 0) {
+  }
+  if (number % 2 === 0) {
     return false;
   }
 

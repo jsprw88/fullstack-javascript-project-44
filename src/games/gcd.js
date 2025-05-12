@@ -7,7 +7,7 @@ const getRoundData = () => {
   const a = getRandomNumber();
   const b = getRandomNumber();
 
-  let result = getGcd(a, b);
+  const result = getGcd(a, b);
 
   const question = `${a} ${b}`;
   return [question, result];

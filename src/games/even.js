@@ -11,4 +11,3 @@ const getRoundData = () => {
 };
 
 export default () => runGame(description, getRoundData);
-

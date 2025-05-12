@@ -9,8 +9,7 @@ const getRoundData = () => {
   const operators = ["+", "-", "*"];
   const operator = operators[Math.floor(Math.random() * operators.length)];
 
-  let result = calculate(num1, operator, num2);
- 
+  const result = calculate(num1, operator, num2);
 
   const question = `${num1} ${operator} ${num2}`;
   return [question, result];
